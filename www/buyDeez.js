@@ -9,9 +9,9 @@ function buildInitializeButton () {
     var initButtonText = document.createTextNode("Check Browser for Web3 Ethereum Mainnet Access");
     initButton.appendChild(initButtonText);
     initButton.addEventListener('click', function(){
-        if (typeof web3 !== 'undefined') {
+        if (typeof window.web3 !== 'undefined') {
             console.log('Web3 Detected')
-            startApp(web3);
+            startApp(window.web3);
         } 
         else {
             console.log('Web3 Not Detected')
