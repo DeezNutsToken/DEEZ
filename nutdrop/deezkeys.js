@@ -1,0 +1,1 @@
+module.exports = {publicKey: '0xfuckingPublic...', privateKey: '0xgodDamnPrivate...'}
